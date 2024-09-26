@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.banklogo{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; 
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.income {
+    color: green;
+}
+
+.incomeback {
+    background-color: green;
+    color:#f2f2f2
+}
+
+.expense {
+    color: red;
+}
+
+.expenseback {
+    background-color: red;
+    color: #f2f2f2;
+}
+
+.balance {
+    border:3px solid black;
+}
+
+
+.user {
+    border: 4px solid black;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    background-color: #f2f2f2; 
+    color: #000000; 
+    text-align: center; 
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.admin-user {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.admin-user:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s ease;
+}
+
+.adminbutton {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.adminbutton:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.5s ease;
+    border: 2px solid black;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 15px; 
+}
+
+.dropdown-menu {
+    min-width: 200px; 
+}
+
+.btn-group {
+    margin-right: 10px;
+}
+
+
