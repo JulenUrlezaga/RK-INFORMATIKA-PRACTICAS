@@ -9,14 +9,16 @@ try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $userID = $_SESSION['ID'];
         $username = $_POST['username'];
+        $firstname = $_POST['firstname'];
         $email = $_POST['email'];
         $surname = $_POST['surname'];
 
         $conn->beginTransaction();
 
-        $sql = "UPDATE users SET user = :username, email = :email WHERE ID = :id";
+        $sql = "UPDATE users SET user = :username, firstname =:firstname,email = :email WHERE ID = :id";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':username', $username);
+        $stmt->bindParam(':firstname', $firstname);
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':id', $userID);
 
